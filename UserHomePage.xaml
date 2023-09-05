@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.UserHomePage"
+             Title="UserHomePage">
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="15"
+        Padding="20,50,20,0">
+
+            <Image
+            Source="dotnet_bot.png"
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="100"
+            HorizontalOptions="Center" />
+
+            <Label
+            Text="e-Desk"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+            <Label
+            Text="All solutions in one platform"
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+            <Entry x:Name="Email" Placeholder="Email" Margin="5" />
+            <Entry x:Name="Password" Placeholder="Password" Margin="5" />
+
+
+            <Button
+            x:Name="UserLoginButton"
+            Text="Login"
+            Clicked="UserLoginButton_Clicked"
+            HorizontalOptions="Fill"
+            BackgroundColor="#004b74"
+            TextColor="#f9fbfd"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
